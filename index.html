@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <!-- displays site properly based on user's device -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title>Frontend Mentor | Tip calculator app</title>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+
+  <body>
+    <main>
+      <!-- <div class="parent"> -->
+      <img src="./images/logo.svg" alt="spliter_logo">
+      <section class="container__box">
+        <section class="container__input">
+          <p>Bill Value</p>
+          <input type="number" class="input__value value" min="1" placeholder="0.00">
+          <p>Select Tip Percentage(%)</p>
+          <section class="tile">
+            <input type="button" value="5%" id="custom" class="jamesMAn">
+            <input type="button" value="10%" id="custom">
+            <input type="button" value="15%" id="custom">
+            <input type="button" value="20%" id="custom">
+            <input type="button" value="25%" id="custom">
+            <input type="number" placeholder="Custom" id="custom-f" role="button">
+          </section>
+          <section class="persons__input">
+            <p>Number of People <span class="empty__value">Can't be zero.</span></p>
+            <!-- <input type="number" class="icon__person"> -->
+            <!-- <br> -->
+          </section>
+          <input type="number" class="input__people persons" placeholder="0">
+        </section>
+        <section class="container__output">
+          <div class="details">
+            <div>
+              <h1 class="text">Tip Amount</h1>
+              <h4>/ person</h4>
+            </div>
+            <h1 class="enlarge tipvalue">4.39</h1>
+          </div>
+
+          <div class="details">
+            <div>
+              <h1 class="text">Total Amount</h1>
+              <h4>/ person</h4>
+            </div>
+            <h1 class="enlarge tipTotal">12.4</h1>
+          </div>
+
+          <!-- <h1 class="text">Tip Amount <span class="amount__value"><i class="doller__icon">$</i> 4.66</span></h1>
+            <h1 class="text">Total Amount <span class="amount__value"><i class="doller__icon">$</i> 4.66</span></h1> -->
+
+          <button class="button">RESET</button>
+        </section>
+      </section>
+
+
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="#">Cyrus Yamir</a>.
+      </div>
+      </div>
+    </main>
+  </body>
+  <script src="script.js"></script>
+
+</html>
